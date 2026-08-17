@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="cur-dot" id="curDot"></div>
+<div class="cur-ring" id="curRing"></div>
+<input type="file" id="photoInput" accept="image/*">
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="logo">Port<em>folio</em></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-hire">Hire Me →</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-tag">Available for work</div>
+    <h1 class="hero-h1">
+      Frontend<br>
+      <em>Developer</em><br>
+      & Designer
+    </h1>
+    <p class="hero-sub">I craft fast, beautiful websites using HTML, CSS & JavaScript — turning ideas into digital experiences people love.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-fill">View My Work ↓</a>
+      
+    </div>
+  </div>
+
+  <!-- PHOTO SIDE -->
+  <div class="hero-right">
+    <div class="photo-frame-wrap">
+
+      <!-- Photo Card — click to upload -->
+      <div class="photo-card" id="photoCard" onclick="document.getElementById('photoInput').click()">
+
+        <!-- Placeholder (shown before photo upload) -->
+        <div class="photo-placeholder" id="photoPlaceholder">
+          <div class="placeholder-icon">🧑‍💻</div>
+          <div class="placeholder-text">Click to add<br>your photo</div>
+          <button class="placeholder-btn">Upload Photo</button>
+        </div>
+
+        <!-- Actual photo (hidden until uploaded) -->
+        <img id="photoImg" class="photo-display" src="" alt="Profile Photo" style="display:none; width:100%; height:100%; object-fit:cover; position:absolute; inset:0;">
+
+        <!-- Hover overlay -->
+        <div class="upload-overlay">
+          <div class="upload-overlay-icon">📸</div>
+          <div class="upload-overlay-text">keerthana</div>
+        </div>
+      </div>
+
+      <div class="photo-label" id="photoLabel">Click card to upload photo</div>
+    </div>
+    <div class="hero-deco">01</div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">HTML5 <span class="star">✦</span></span>
+    <span class="marquee-item">CSS3 <span class="star">✦</span></span>
+    <span class="marquee-item">JavaScript <span class="star">✦</span></span>
+    <span class="marquee-item">Responsive Design <span class="star">✦</span></span>
+    <span class="marquee-item">UI / UX <span class="star">✦</span></span>
+    <span class="marquee-item">Git & GitHub <span class="star">✦</span></span>
+    <span class="marquee-item">Web APIs <span class="star">✦</span></span>
+    <span class="marquee-item">Animations <span class="star">✦</span></span>
+    <span class="marquee-item">HTML5 <span class="star">✦</span></span>
+    <span class="marquee-item">CSS3 <span class="star">✦</span></span>
+    <span class="marquee-item">JavaScript <span class="star">✦</span></span>
+    <span class="marquee-item">Responsive Design <span class="star">✦</span></span>
+    <span class="marquee-item">UI / UX <span class="star">✦</span></span>
+    <span class="marquee-item">Git & GitHub <span class="star">✦</span></span>
+    <span class="marquee-item">Web APIs <span class="star">✦</span></span>
+    <span class="marquee-item">Animations <span class="star">✦</span></span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div id="about">
+  <div class="about-inner">
+    <div class="about-text reveal">
+      <div class="section-tag">About Me</div>
+      <h2 class="section-h">Building the <em>web</em> one pixel at a time</h2>
+      <p>I'm a passionate <strong>Frontend Developer</strong> who loves turning creative ideas into clean, functional websites. Currently mastering HTML, CSS and JavaScript through real-world projects.</p>
+      <p>I believe great design and great code go hand in hand. Every project is an opportunity to learn something new and push my craft forward.</p>
+      <blockquote class="pullquote">"Design is not just what it looks like — design is how it works."</blockquote>
+      <p>When I'm not coding, I'm exploring new design trends, studying how top websites are built, and working on side projects to keep growing.</p>
+    </div>
+    <div class="stats-col reveal">
+      <div class="stat-card">
+        <div><div class="stat-num">5+</div><div class="stat-lbl">Projects Built</div></div>
+        <div class="stat-icon">🚀</div>
+      </div>
+      <div class="stat-card">
+        <div><div class="stat-num">3</div><div class="stat-lbl">Core Technologies</div></div>
+        <div class="stat-icon">💻</div>
+      </div>
+      <div class="stat-card">
+        <div><div class="stat-num">∞</div><div class="stat-lbl">Passion for Learning</div></div>
+        <div class="stat-icon">📚</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-tag reveal">Skills & Tools</div>
+  <h2 class="section-h reveal">What I <em>work</em> with</h2>
+  <div class="skills-grid reveal">
+    <div class="skill-box">
+      <span class="sk-icon">🌐</span>
+      <div class="sk-name">HTML5</div>
+      <div class="sk-desc">Semantic markup, accessibility and SEO-friendly structure.</div>
+      <div class="sk-dots">
+        <div class="sk-dot on"></div><div class="sk-dot on"></div>
+        <div class="sk-dot on"></div><div class="sk-dot on"></div><div class="sk-dot"></div>
+      </div>
+    </div>
+    <div class="skill-box">
+      <span class="sk-icon">🎨</span>
+      <div class="sk-name">CSS3</div>
+      <div class="sk-desc">Flexbox, Grid, animations and responsive design.</div>
+      <div class="sk-dots">
+        <div class="sk-dot on"></div><div class="sk-dot on"></div>
+        <div class="sk-dot on"></div><div class="sk-dot on"></div><div class="sk-dot"></div>
+      </div>
+    </div>
+    <div class="skill-box">
+      <span class="sk-icon">⚡</span>
+      <div class="sk-name">JavaScript</div>
+      <div class="sk-desc">DOM manipulation, fetch API and localStorage.</div>
+      <div class="sk-dots">
+        <div class="sk-dot on"></div><div class="sk-dot on"></div>
+        <div class="sk-dot on"></div><div class="sk-dot"></div><div class="sk-dot"></div>
+      </div>
+    </div>
+    <div class="skill-box">
+      <span class="sk-icon">🐙</span>
+      <div class="sk-name">Git & GitHub</div>
+      <div class="sk-desc">Version control and collaborative development.</div>
+      <div class="sk-dots">
+        <div class="sk-dot on"></div><div class="sk-dot on"></div>
+        <div class="sk-dot on"></div><div class="sk-dot"></div><div class="sk-dot"></div>
+      </div>
+    </div>
+    <div class="skill-box">
+      <span class="sk-icon">📱</span>
+      <div class="sk-name">Responsive Design</div>
+      <div class="sk-desc">Mobile-first, fluid layouts for any screen size.</div>
+      <div class="sk-dots">
+        <div class="sk-dot on"></div><div class="sk-dot on"></div>
+        <div class="sk-dot on"></div><div class="sk-dot on"></div><div class="sk-dot"></div>
+      </div>
+    </div>
+    <div class="skill-box">
+      <span class="sk-icon">🎭</span>
+      <div class="sk-name">UI Design</div>
+      <div class="sk-desc">Color theory, typography and visual hierarchy.</div>
+      <div class="sk-dots">
+        <div class="sk-dot on"></div><div class="sk-dot on"></div>
+        <div class="sk-dot on"></div><div class="sk-dot"></div><div class="sk-dot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<div id="projects">
+  <div class="proj-inner">
+    <div class="section-tag reveal">Selected Work</div>
+    <h2 class="section-h reveal">Projects I've <em>built</em></h2>
+    <div class="proj-list reveal">
+      <a href=" https://keerthanakumar2207.github.io/weather-app/  " class="proj-row">
+        <div class="proj-n">01</div>
+        <div>
+          <div class="proj-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JS</span><span class="ptag">API</span></div>
+          <div class="proj-title">Weather App</div>
+          <div class="proj-desc">Real-time weather with animated backgrounds using OpenWeather API.</div>
+        </div>
+        <div class="proj-arrow">↗</div>
+      </a>
+      <a href="  https://keerthanakumar2207.github.io/task-manager/" class="proj-row">
+        <div class="proj-n">02</div>
+        <div>
+          <div class="proj-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JS</span></div>
+          <div class="proj-title">Task Manager</div>
+          <div class="proj-desc">Productivity app with filtering, drag & drop and localStorage.</div>
+        </div>
+        <div class="proj-arrow">↗</div>
+      </a>
+      <a href=" https://keerthanakumar2207.github.io/quiz-game/" class="proj-row">
+        <div class="proj-n">03</div>
+        <div>
+          <div class="proj-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JS</span></div>
+          <div class="proj-title">Quiz Game</div>
+          <div class="proj-desc">Interactive quiz with timer, scoring and confetti animations.</div>
+        </div>
+        <div class="proj-arrow">↗</div>
+      </a>
+      <a href="https://keerthanakumar2207.github.io/calculator-app/ " class="proj-row">
+        <div class="proj-n">04</div>
+        <div>
+          <div class="proj-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">js</span></div>
+          <div class="proj-title">calculator</div>
+          <div class="proj-desc">An interactive calculator for quick and accurate mathematical calculations.</div>
+        </div>
+        <div class="proj-arrow">↗</div>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;" class="reveal">
+     
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->               
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-eyebrow reveal">Get In Touch</div>
+    <h2 class="contact-h reveal">Let's work<br><em>together</em></h2>
+    <p class="contact-sub reveal">Open to freelance, internships and collaborations. I'd love to hear about what you're building!</p>
+    <div class="contact-btn"><h1 class="hero-h1">
+      <span >keerthana</span></h1>
+    </div>
+    <br>
+    <div class="socials reveal">
+      <a href="https://github.com/keerthanakumar2207/githubemc1.git" class="soc-link">⚡ GitHub</a>
+      <a href="https://www.linkedin.com/in/keerthana0722?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="soc-link">💼 LinkedIn</a>
+     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=keerthanakumar2025@gmail.com" class="soc-link">
+   <i class="fa-solid fa-envelope"></i> Email
+</a>
+      <a href="resume/KEERTHANA.pdf" class="soc-link">📄 Resume</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 — Frontend Developer</span>
+  <span>Built with HTML, CSS & JS</span>
+</footer>
+
+<script src="scrpit.js"></script>
+</body>
+</html>
